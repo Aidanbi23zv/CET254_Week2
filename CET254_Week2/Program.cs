@@ -19,6 +19,7 @@ namespace CET254_Week2
             mainmenu.AddMenuItem("Randomise List of Doubles (10 Values)", "TenDoubles", typeof(Program));
             mainmenu.AddMenuItem("Print List of Doubles", "PrintListOfDoubles", typeof(Program));
             mainmenu.AddMenuItem("Perform a Bubble Sort", "PerformBubble", typeof(Program));
+            mainmenu.AddMenuItem("Perform a Selection Sort", "PerformSelection", typeof(Program));
 
             mainmenu.RunForever();
             Console.ReadKey();
@@ -27,6 +28,13 @@ namespace CET254_Week2
         public static void PerformBubble()
         {
             Console.WriteLine("Performing Bubble sort...");
+            BubbleSort.Perform(listOfDoubles);
+            Console.WriteLine("Sort Completed");
+        }
+
+        public static void PerformSelection()
+        {
+            Console.WriteLine("Performing Selection sort...");
             BubbleSort.Perform(listOfDoubles);
             Console.WriteLine("Sort Completed");
         }
