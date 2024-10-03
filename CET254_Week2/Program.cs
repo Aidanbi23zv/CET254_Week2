@@ -10,6 +10,7 @@ namespace CET254_Week2
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();
         }
     }
 }
